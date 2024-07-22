@@ -1,0 +1,207 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #dddddd;
+}
+.navbar{
+  position: sticky;
+}
+a{
+  text-decoration: none;
+}
+p{
+  font-size: 1em;
+}
+h1{
+  text-align: center;
+  color: #19E1EE;
+  margin: 5%;
+  font-size: 2em;
+}
+h1 span{
+  border: 5px dashed #19E1EE;
+  padding: 1%;
+}
+textarea{
+  height: 100px;
+}
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
+.clear{
+  clear: both;
+}
+.textcenter{
+  text-align: center;
+}
+.section, .cvName, .cvPicture img, .section input,
+.section textarea, .followme img{
+  margin: 1%;
+}
+.section, .section input, .navbar li, .section textarea{
+  padding: 1%;
+}
+.cv, .cvSectionBody{
+  margin: 1% 5%;
+}
+.cvPicture, .avatar-profile, .followme img{
+  width: 10%;
+}
+.cvSectionContent, .section input, textarea{
+  width: 70%;
+}
+.border-round, #submit{
+  border-radius: 1em;
+}
+.section, .cv, .cvHead, .cvSectionBody{
+  overflow: hidden;
+}
+.skillList, .cvSectionBody, .cvContacts ul{
+  list-style-type: none;
+}
+.facebookicon, .tweetericon, .instagramicon, #name,
+.navbar li{
+  display: inline-block;
+}
+.mediaItem, .section input, .section textarea{
+  box-sizing: border-box;
+}
+.header{
+  background-image: url("img/banner.jpg");
+  background-size: cover;
+}
+.header p{
+  color: #ffffff;
+  font-size: 3em;
+  font-weight: bold;
+}
+.section{
+  background-color: #ffffff;
+}
+.avatar-profile{
+  border: 3px solid white;
+  border-radius: 50%;
+}
+.navbar ul{
+  list-style-type: none;
+  text-align: center;
+}
+.aboutme p{
+  display: list-item;
+  margin: 3%;
+}
+.cv{
+  background-color: #e5efff;
+  border-radius: 1em;
+}
+.cvHead{
+  background-color: #d6e5fc;
+  border-bottom: 1px solid black;
+}
+.cvContacts{
+  margin: 5%;
+}
+.cvName{
+  padding: 5%;
+}
+.cvPicture img{
+  width: 100%;
+  border-radius: 50%;
+  margin: 10% 35%;
+}
+.cvSectionTitle{
+  width: 25%;
+}
+.cvSectionTitle h1{
+  color: #304566;
+}
+.cvTitle{
+  margin-bottom: 0;
+}
+.cvDetails{
+  font-size: 1em;
+  font-style: italic;
+  margin-bottom: 3%;
+}
+.cvDescription, .cvTitle{
+  margin-top: 3%;
+}
+.skillList{
+  column-count: 4;
+  padding-left: 0;
+  margin-top: 1%;
+}
+.cvSectionBody{
+  border-top: 1px solid black;
+}
+.cvSectionBody:first-child{
+  border: 0;
+}
+.cvTitle:first-child{
+  margin-top: 0;
+}
+.section input, .section textarea{
+  font-size: 2em;
+  background-color: #efefef;
+  border: 1px solid #cecece;
+  max-width: 70%;
+}
+#submit{
+  background-color: #19E1EE;
+}
+.followicons img{
+  width: 100%;
+}
+.facebookicon, .tweetericon, .instagramicon{
+  width: 10%;
+  max-width: 10%;
+}
+/* 720P case */
+*{
+  -moz-animation: fadein 3s;
+  -webkit-animation: fadein 3s;
+  -o-animation: fadein 3s;
+}
+@media screen and (max-width: 720px){
+  .cvSectionTitle h1{
+    font-size: 4vw;
+  }
+}
+@keyframes fadein{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadein{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadein{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+@-o-keyframes fadein{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
