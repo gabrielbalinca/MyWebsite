@@ -1,0 +1,94 @@
+
+.cv, .cvPicture, .cvName, .cvSectionBody{
+  margin-top: 1%;
+}
+.cvPicture, .cvName{
+  margin-right: 1%;
+}
+.cv, .cvPicture, .cvName, .cvSectionBody {
+  margin-bottom: 1%;
+}
+.cvPicture, .cvName {
+  margin-left: 1%;
+}
+.cvTitle{
+  margin-top: 3%;
+}
+.cv, .cvSectionBody {
+  margin-right: 5%;
+}
+.cv, .cvSectionBody {
+  margin-left: 5%;
+}
+.cvBody {
+  background-color: #e5efff;
+}
+.cvHead, .cvPicture, .cvName, .cvContacts,
+.cvBody, .cvSectionBody {
+  display: flex;
+}
+.cvHead, .cvSectionBody {
+  flex-direction: row;
+}
+.cvBody {
+  flex-direction: column;
+}
+.cvPicture, .cvName, .cvContacts {
+  align-items: center;
+}
+.cvHead, .cvSectionBody {
+  border-bottom: 1px solid black;
+}
+.cvHead {
+  background-color: #d6e5fc;
+  border-radius: 1em 1em 0 0;
+}
+.cvPicture {
+  width: 10%;
+}
+.cvPicture img {
+  border-radius: 50%;
+  width: 100%;
+}
+.cvContacts {
+  margin: 0 1% 0 auto;
+}
+.cvContacts > ul > li {
+  list-style-type: none;
+}
+.cvBody {
+  flex-wrap: wrap;
+  border-radius: 0 0 1em 1em;
+}
+
+.cvSectionTitle {
+  width: 25%;
+}
+.cvSectionTitle > h1 {
+  color: #304566;
+  font-size: 4vw;
+  margin: 5%;
+  text-align: center;
+}
+.cvSectionContent {
+  width: 70%;
+  margin: 1% 0 1% auto;
+}
+.cvSectionBody:last-child {
+  border-bottom: 0;
+}
+.cvTitle:first-child {
+  margin-top: 0;
+}
+.cvDetails{
+  font-size: 14pt;
+  font-style: italic;
+  margin-bottom: 3%;
+}
+.skillList {
+  column-count: 4;
+  margin: 1% 0 0 auto;
+}
+.skillList > li {
+  list-style-type: none;
+}

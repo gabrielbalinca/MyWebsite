@@ -1,9 +1,3 @@
 # MyWebsite
-* This is my first version of my website.
-* For this project I compiled almost everything I learned.
-* What I learned from this project:
-  * Selecting all tags
-  * Selecting specific tags
-  * Fade in effect
-  * Flexbox
-  * CSS Media Querys
+* This is the second version of my website.
+* The main highlight of this version is top fixed navbar using only css
