@@ -1,0 +1,338 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /*  */
+}
+/* Main Page Style start */
+.header {
+  color: #ffffff;
+  height: 100vh;
+  position: relative;
+}
+.container {
+  max-width: 960px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 50px;
+}
+.header::before {
+  content: '';
+  background: url('../img/background.jpg') no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.header .header-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+.headerimg {
+  border-radius: 50%;
+  border: 10px solid white;
+  max-height: 20%;
+  width: auto;
+}
+.header h1 {
+  font-size: 48px;
+}
+.header p {
+  font-size: 24px;
+}
+.header > h1 {
+  margin: 10px;
+}
+.btn {
+  text-decoration: none;
+  display: inline-block;
+  background: rgba(56, 253, 243, 0.1);
+  color: #ffffff;
+  margin-top: 10px;
+  border: 5px solid rgba(56, 253, 243, 0.75);
+  padding: 10px 20px;
+  font-size: 24px;
+  transition: background 1s ease-in-out;
+}
+.btn:hover {
+  background: rgba(56, 253, 243, 0.75);
+}
+/* Main Page Style end */
+/* Menu Style start */
+.menu-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.menu-wrap .checkbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  opacity: 0;
+}
+.menu-wrap .menu-button {
+  position: absolute;
+  background: rgba(56, 253, 243, 0);
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 60px;
+  height: 60px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu-wrap .menu-button > div {
+  content: '';
+  position: relative;
+  flex: none;
+  width: 100%;
+  height: 5px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease;
+}
+.menu-button > div::before,
+.menu-button > div::after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: -10px;
+  width: 100%;
+  height: 5px;
+  background: inherit;
+}
+.menu-button > div::after {
+  top: 10px;
+}
+.menu-wrap .checkbox:checked + .menu-button > div {
+  transform: rotate(135deg);
+}
+.menu-wrap .checkbox:checked + .menu-button > div::before,
+.menu-wrap .checkbox:checked + .menu-button > div::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+.menu-wrap .checkbox:checked:hover + .menu-button > div {
+  transform: rotate(225deg);
+}
+/* Menu Style end */
+/* Menu start */
+.menu-wrap .checkbox:checked ~ .menu {
+  visibility: visible;
+}
+.menu-wrap .checkbox:checked ~ .menu > div {
+  transform: scale(1);
+  transition-duration: 0.75s;
+}
+.menu-wrap .checkbox:checked ~ .menu > div > div {
+  opacity: 1;
+  transition: opacity 0.5s ease 0.5s;
+}
+.menu-wrap .menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu-wrap .menu > div {
+  background: rgba(1, 25, 23, 0.8);
+  border-radius: 50%;
+  width: 200vw;
+  height: 200vw;
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0);
+  transition: 0.5s ease;
+}
+.menu-wrap .menu > div > div{
+  text-align: center;
+  max-width: 90vw;
+  max-height: 100vw;
+  opacity: 0;
+  transition: opacity 0.5 ease;
+}
+.menu-wrap .menu > div > div > ul > li{
+  list-style: none;
+  color: #ffffff;
+  font-size: 24px;
+  padding: 15px;
+}
+.menu-wrap .menu > div > div > ul > li > a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.5 ease;
+}
+/* Menu start */
+/* CV Style start*/
+.cv {
+  width: 100%;
+  border: 5px solid rgba(56, 253, 243, 1);
+  border-radius: 1em;
+  display: flex;
+  flex-direction: column;
+}
+.header h1{
+  margin-bottom: 5%;
+}
+.cvheader {
+  display: flex;
+  flex-direction: row;
+
+}
+.hr{
+  content: "";
+  background: rgba(56, 253, 243, 1);
+  width: calc(100% - 10%);
+  height: 5px;
+  border: 0;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.cvPicture {
+  margin-left: 1%;
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.cvPicture img{
+  border-radius: 50%;
+  margin: 5%;
+  width: 100%;
+}
+.cvName {
+  margin: 5%;
+}
+.cvHeaderDetails{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: 1%;
+}
+.cvHeaderDetails > ul{
+  list-style-type: none;
+  text-align: left;
+}
+.cvBody{
+  display: flex;
+  flex-direction: row;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+.cvSectionTitle > h1{
+  font-size: 2rem;
+}
+.cvSectionTitle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 2%;
+  margin-left: 2%;
+}
+.cvSection{
+  display: flex;
+  flex-direction: row;
+  margin-top: 2%;
+}
+.cvLeftBody{
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid rgba(56, 253, 243, 1);
+  width: calc(100% - 50% - 1px);
+}
+.cvRightBody{
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 50% - 1px);
+  border-left: 1px solid rgba(56, 253, 243, 1);
+}
+.cvSectionContent{
+  margin-right: 2%;
+  margin-top: 3%;
+  margin-left: 2%;
+}
+.cvSectionContent > p{
+  font-size: 1.15em;
+  text-align: left;
+}
+.cvTitle{
+  text-align: left;
+}
+.cvDetails{
+  text-align: left;
+  font-style: italic;
+}
+.cvDescription{
+  font-size: 1.15em;
+  text-align: left;
+}
+.cvJobs{
+  display: flex;
+  flex-direction: column;
+}
+.skillList{
+  column-count: 3;
+}
+.skillList > li{
+  list-style-type: none;
+}
+/* CV Style end */
+.input{
+  background-color: transparent;
+  border: 0;
+  border-bottom: 5px solid rgba(56, 253, 243, 0.5);
+  height: 50px;
+  font-size: 24px;
+  color: white;
+  margin: 1%;
+  width: 50%;
+}
+.input::placeholder{
+  color: white;
+}
+.input:focus{
+  outline: none;
+  border-bottom: 5px solid rgba(56, 253, 243, 1);
+  transition: 0.5s;
+}
+.messagearea{
+  background-color: transparent;
+  border: 0;
+  border-bottom: 5px solid rgba(56, 253, 243, 0.5);
+  width: auto;
+  font-size: 24px;
+  color: white;
+  margin: 1%;
+  width: 50%;
+}
+.messagearea::placeholder{
+  color: white;
+}
+.messagearea:focus{
+  outline: none;
+  border-bottom: 5px solid rgba(56, 253, 243, 1);
+  transition: 0.5s;
+}
